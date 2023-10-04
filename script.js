@@ -38,13 +38,13 @@ function bigBox(card) {
         description: ${card.description}
 </div>
 `;
+
+  mainDiv.addEventListener("click", function handleClick(event) {
+    mainDiv.classList.toggle("flipped")
+  });
 }
 
 for (let i = 0; i < newdata1.length; i++) {
   bigBox(newdata1[i]);
   bigBox(newdata2[i]);
 }
-
-
-
-

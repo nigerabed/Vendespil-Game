@@ -7,7 +7,7 @@
 body{
     height: 100vh;
     width:100%;
-    background-color: rgb(197, 197, 214);
+    background-color: rgb(46, 7, 7);
 
 }
 
@@ -72,12 +72,12 @@ transform-style: preserve-3d;
  transition: transform 1500ms;
  border: 2px solid black;
  border-radius: 2em;
+ cursor: pointer;
 
  
 }
 
-.cards:hover{
-    cursor: pointer;
+.flipped{
      transform: rotateY(180deg);
 
 }
