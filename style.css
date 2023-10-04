@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     height: 100vh;
     width:100%;
+    background-color: rgb(197, 197, 214);
 
 }
 
@@ -37,20 +39,75 @@ h1{
     background-color: rgb(87, 82, 82);
     border-radius: 1em;
 }
-
+/* 
 img{
     height: 12em;
-  
     margin: 2em;
+    border: 3px solid black;
+} */
 
-}
-
-.cards{
+/* .cards{
     margin-top: 3em;
-}
+    
+} */
 
-#outside-box{
+/* #outside-box{
+
     width: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+} */
+
+
+ .container {
+  margin-top: 3em;
+  width: 200px;
+  height: 250px;
+  /* border: 2px solid black; */
+  border-radius: 2em;
+  margin-left: 2em;
+  
 }
+
+.cards{
+height: 100%;
+width: 100%;
+position: relative;
+transform-style: preserve-3d;
+ transition: transform 1500ms;
+ border: 2px solid black;
+ border-radius: 2em
+}
+
+.cards:hover{
+    cursor: pointer;
+     transform: rotateY(180deg);
+
+}
+
+
+.front, .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2em;
+    position: absolute;
+    backface-visibility: hidden;
+    border: 2px solid bl
+}
+
+.front{
+    height: 100%;
+    width: 100%;
+    /* background-image: url('./game.jpg'); */
+}
+.front img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 2em;
+}
+    .back{
+        background-color: rgb(98, 125, 125);
+        transform: rotateY(180deg);
+        text-align: center;
+    }
