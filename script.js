@@ -1,19 +1,19 @@
 import data from "./data.json" assert { type: "json" };
 
-// let newdata1 = data.slice(0, 10);
-// let newdata2 = data.slice(0, 10);
+let newdata1 = data.slice(0, 10);
+let newdata2 = data.slice(0, 10);
 
-// function shuffle(arrayData) {
-//   for (let i = 0; i < arrayData.length; i++) {
-//     let randomIndex = Math.floor(Math.random() * arrayData.length); //Math.floor(Math.random()* max); random er formula.
-//     let temp = arrayData[randomIndex];
-//     arrayData[randomIndex] = arrayData[i];
-//     arrayData[i] = temp;
-//   }
-// }
+function shuffle(arrayData) {
+  for (let i = 0; i < arrayData.length; i++) {
+    let randomIndex = Math.floor(Math.random() * arrayData.length); //Math.floor(Math.random()* max); random er formula.
+    let temp = arrayData[randomIndex];
+    arrayData[randomIndex] = arrayData[i];
+    arrayData[i] = temp;
+  }
+}
 
-// shuffle(newdata1);
-// shuffle(newdata2);
+shuffle(newdata1);
+shuffle(newdata2);
 
 function bigBox(card) {
   let box = document.getElementById("outside-box");
@@ -31,17 +31,20 @@ function bigBox(card) {
 
 <div class="back">
     <h3>${card.tag}</h3>
+    <br>
+        type: ${card.type} 
+        <br>
+        attributes:${card.attributes[(0, 1)]}
+        description: ${card.description}
 </div>
 `;
 }
 
-bigBox(data);
-// for (let i = 0; i < newdata1.length; i++) {
-//   bigBox(newdata1[i]);
-//   bigBox(newdata2[i]);
-// }
+for (let i = 0; i < newdata1.length; i++) {
+  bigBox(newdata1[i]);
+  bigBox(newdata2[i]);
+}
 
 
 
-//  <h3>${card.tag}</h3>;
 
