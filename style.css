@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width:100%;
+
+}
+
+header{
+    height: 15em ;
+    width: 100%;
+    background-color: rgb(96, 139, 240);
+    border: 2px solid black;
+
+}
+
+#top{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1{
+  font-family: cursive;
+  font-size: 5em;
+   text-shadow: 3px 3px 5px red;
+}
+
+.message{
+    height: 12em;
+    width: 15em;
+    margin-top: 1.5em;
+    background-color: rgb(87, 82, 82);
+    border-radius: 1em;
+}
+
+img{
+    height: 12em;
+    width: 25%;
+
+}
+
+.cards{
+    margin-top: 3em;
+}

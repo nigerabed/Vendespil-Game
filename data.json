@@ -1,0 +1,627 @@
+[
+  {
+    "tag": "a",
+    "type": "open-close",
+    "attributes": ["href", "href", "target"],
+    "nativeStyling": [
+      {
+        "property": "text-decoration",
+        "value": "underline"
+      },
+      {
+        "property": "color",
+        "value": "blue"
+      }
+    ],
+    "description": "Definerer et hyperlink, der linker til en anden webside eller ressource."
+  },
+  {
+    "tag": "abbr",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en forkortelse eller akronym, typisk vist med en prikket understregning og en værktøjstip ved hover."
+  },
+  {
+    "tag": "address",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer kontaktoplysninger for forfatteren eller ejeren af et dokument."
+  },
+  {
+    "tag": "area",
+    "type": "void",
+    "attributes": ["alt", "coords", "href", "shape", "target"],
+    "nativeStyling": [],
+    "description": "Definerer et klikbart område inden for et billedkort."
+  },
+  {
+    "tag": "article",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer en selvstændig komposition i et dokument, såsom en nyhedsartikel eller blogindlæg."
+  },
+  {
+    "tag": "aside",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer indhold, der er perifert relateret til det omkringliggende indhold, ofte vist som en sidebjælke."
+  },
+  {
+    "tag": "audio",
+    "type": "open-close",
+    "attributes": ["controls", "src"],
+    "nativeStyling": [],
+    "description": "Indlejrer lydindhold i en webside, med valgfri afspilningskontrol."
+  },
+  {
+    "tag": "b",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer tekst, der skal vises med fed skrift."
+  },
+  {
+    "tag": "blockquote",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Angiver, at den indesluttede tekst er et citat fra en anden kilde, ofte vist med indrykning."
+  },
+  {
+    "tag": "br",
+    "type": "void",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer en linjeskift inden for tekstindhold."
+  },
+  {
+    "tag": "button",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en klikbar knap."
+  },
+  {
+    "tag": "caption",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en tabeltekst, der giver en titel eller forklaring til en tabel."
+  },
+  {
+    "tag": "cite",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer titlen på et kreativt værk eller en henvisning til en anden kilde."
+  },
+  {
+    "tag": "code",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer computerkode eller en kodefragment."
+  },
+  {
+    "tag": "col",
+    "type": "void",
+    "attributes": ["span"],
+    "nativeStyling": [],
+    "description": "Angiver kolonneegenskaber for en tabelkolonnegruppe."
+  },
+  {
+    "tag": "colgroup",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en gruppe af kolonner i en tabel."
+  },
+  {
+    "tag": "datalist",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer en liste over foruddefinerede muligheder for et <input>-element med type=\"text\"."
+  },
+  {
+    "tag": "dd",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en beskrivelse eller værdi for et begreb i en beskrivelsesliste."
+  },
+  {
+    "tag": "del",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Angiver tekst, der er blevet slettet fra dokumentet."
+  },
+  {
+    "tag": "details",
+    "type": "open-close",
+    "attributes": ["open"],
+    "nativeStyling": [],
+    "description": "Definerer en oplysning, der kan skifte til at afsløre eller skjule yderligere indhold."
+  },
+  {
+    "tag": "dfn",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer den definerende instans af et begreb i et dokument."
+  },
+  {
+    "tag": "div",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en generisk beholder for flydende indhold, ofte brugt til layoutformål."
+  },
+  {
+    "tag": "dl",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en beskrivelsesliste bestående af en liste over termer (dt) og deres definitioner (dd)."
+  },
+  {
+    "tag": "dt",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en term eller et navn i en beskrivelsesliste."
+  },
+  {
+    "tag": "em",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer tekst, der skal fremhæves eller kursiveres."
+  },
+  {
+    "tag": "embed",
+    "type": "void",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Indlejrer eksternt indhold, såsom multimedie, på en webside."
+  },
+  {
+    "tag": "fieldset",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Grupperer relaterede formelementer og etiketter inden for en webformular."
+  },
+  {
+    "tag": "figcaption",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en billedtekst eller beskrivelse for et <figure>-element."
+  },
+  {
+    "tag": "figure",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer enhver form for indhold, der refereres fra hovedindholdet, ofte med en billedtekst."
+  },
+  {
+    "tag": "footer",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en sidefod for en sektion eller side, typisk indeholdende metadata eller oplysninger om ophavsret."
+  },
+  {
+    "tag": "form",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en webformular, der giver brugerne mulighed for at indtaste og sende data."
+  },
+  {
+    "tag": "h1",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en topniveau overskrift med den højeste betydning."
+  },
+  {
+    "tag": "h2",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en overskrift på andet niveau med lidt mindre betydning end <h1>."
+  },
+  {
+    "tag": "h3",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en overskrift på tredje niveau med aftagende betydning."
+  },
+  {
+    "tag": "h4",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en overskrift på fjerde niveau med lavere betydning."
+  },
+  {
+    "tag": "h5",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en overskrift på femte niveau med endnu lavere betydning."
+  },
+  {
+    "tag": "h6",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en overskrift på sjette niveau med den laveste betydning."
+  },
+  {
+    "tag": "header",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en sidehovedsektion, normalt indeholdende overskrifter eller logoer."
+  },
+  {
+    "tag": "hgroup",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Grupperer en samling overskrifter (<h1>-<h6>) for at dele et fælles tema eller formål."
+  },
+  {
+    "tag": "hr",
+    "type": "void",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Indsætter en horisontal linje for at adskille indhold på en webside."
+  },
+  {
+    "tag": "i",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer tekst, der skal vises med kursiv stil."
+  },
+  {
+    "tag": "img",
+    "type": "void",
+    "attributes": ["src", "alt"],
+    "nativeStyling": [],
+    "description": "Indsætter et billede i HTML-dokumentet med en valgfri tekstbeskrivelse."
+  },
+  {
+    "tag": "input",
+    "type": "void",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer et inputfelt, hvor brugere kan indtaste data."
+  },
+  {
+    "tag": "ins",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Angiver tekst, der er blevet indsat i dokumentet."
+  },
+  {
+    "tag": "label",
+    "type": "open-close",
+    "attributes": ["for"],
+    "nativeStyling": [],
+    "description": "Definerer en etiket for et formelement, ofte brugt i forbindelse med inputfelter."
+  },
+  {
+    "tag": "legend",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en billedtekst eller beskrivelse for en <fieldset>-gruppe."
+  },
+  {
+    "tag": "li",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer et element i en liste, såsom en punktliste eller en nummereret liste."
+  },
+  {
+    "tag": "main",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer hovedindholdet i et HTML-dokument, der ikke er en header, fodnote eller sidebjælke."
+  },
+  {
+    "tag": "map",
+    "type": "open-close",
+    "attributes": ["name"],
+    "nativeStyling": [],
+    "description": "Definerer et billedkort, der angiver, hvordan billeder og områder i billeder skal linkes."
+  },
+  {
+    "tag": "mark",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer tekst, der skal markeres eller fremhæves på en webside."
+  },
+  {
+    "tag": "math",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Indlejrer matematisk notation eller ligninger i en webside."
+  },
+  {
+    "tag": "menu",
+    "type": "open-close",
+    "attributes": ["type"],
+    "nativeStyling": [],
+    "description": "Definerer en menu, ofte brugt til navigationsformål."
+  },
+  {
+    "tag": "meter",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer en måling inden for et kendt interval, såsom en slider eller en statusindikator."
+  },
+  {
+    "tag": "nav",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en navigationssektion, typisk indeholdende links til andre dele af webstedet."
+  },
+  {
+    "tag": "ol",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en ordnet liste (nummereret liste) med punkter i en bestemt rækkefølge."
+  },
+  {
+    "tag": "optgroup",
+    "type": "open-close",
+    "attributes": ["label"],
+    "nativeStyling": [],
+    "description": "Grupperer en samling af <option>-elementer i en dropdown-liste."
+  },
+  {
+    "tag": "option",
+    "type": "open-close",
+    "attributes": ["value", "selected"],
+    "nativeStyling": [],
+    "description": "Definerer en mulighed i en dropdown-liste."
+  },
+  {
+    "tag": "output",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer resultatet af en beregning eller en brugerinteraktion."
+  },
+  {
+    "tag": "p",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en almindelig tekstafsnit i et HTML-dokument."
+  },
+  {
+    "tag": "picture",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer et kontainer-element til et responsivt billede med forskellige kilder og formater."
+  },
+  {
+    "tag": "pre",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer forudformateret tekst, som normalt vises med fast skrifttype og bevaret formatering."
+  },
+  {
+    "tag": "progress",
+    "type": "open-close",
+    "attributes": ["value", "max"],
+    "nativeStyling": [],
+    "description": "Representerer en fremgangsindikator for en opgave eller proces, der er i gang."
+  },
+  {
+    "tag": "q",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Indikerer, at den indesluttede tekst er et kort citat fra en anden kilde."
+  },
+  {
+    "tag": "s",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer tekst, der er blevet gennemstreget eller markeret som ugyldig."
+  },
+  {
+    "tag": "search",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer et inputfelt af typen 'search' for søgeformål."
+  },
+  {
+    "tag": "section",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en sektion eller blok af indhold i et HTML-dokument, ofte med en overskrift."
+  },
+  {
+    "tag": "select",
+    "type": "open-close",
+    "attributes": ["multiple"],
+    "nativeStyling": [],
+    "description": "Definerer en dropdown-liste, hvor brugere kan vælge en eller flere muligheder."
+  },
+  {
+    "tag": "small",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer tekst, der skal vises i en mindre skriftstørrelse for sekundær information."
+  },
+  {
+    "tag": "span",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en inline-container til en lille mængde tekst eller indhold."
+  },
+  {
+    "tag": "strong",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer tekst, der skal vises i fed skrifttype for stærk betoning."
+  },
+  {
+    "tag": "sub",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer tekst, der skal vises som en subscript (nedre indeks)."
+  },
+  {
+    "tag": "summary",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en overskrift eller resumé for et <details>-element."
+  },
+  {
+    "tag": "sup",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer tekst, der skal vises som en superscript (øvre indeks)."
+  },
+  {
+    "tag": "svg",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Indlejrer skalerbare vektorgrafik i en webside ved hjælp af SVG-formatet."
+  },
+  {
+    "tag": "table",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en tabel til at organisere data i rækker og kolonner."
+  },
+  {
+    "tag": "tbody",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en gruppe af rækker i en tabel, der indeholder selve dataene."
+  },
+  {
+    "tag": "td",
+    "type": "open-close",
+    "attributes": ["colspan", "rowspan"],
+    "nativeStyling": [],
+    "description": "Definerer en tabelcelle inden for en tabelrække, der indeholder data."
+  },
+  {
+    "tag": "textarea",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer et flerlinjet tekstindtastningsfelt, hvor brugere kan indtaste længere tekst."
+  },
+  {
+    "tag": "tfoot",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en tabelfod, der indeholder opsummeringsoplysninger for en tabel."
+  },
+  {
+    "tag": "th",
+    "type": "open-close",
+    "attributes": ["colspan", "rowspan", "scope"],
+    "nativeStyling": [],
+    "description": "Definerer en overskriftscelle i en tabelrække eller -kolonne."
+  },
+  {
+    "tag": "thead",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en tabeloverskrift, der indeholder overskrifter for tabelkolonner."
+  },
+  {
+    "tag": "time",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer en bestemt tidspunkt eller tidsinterval, såsom datoer eller klokkeslæt."
+  },
+  {
+    "tag": "tr",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en tabelrække, der indeholder en samling af tabelceller."
+  },
+  {
+    "tag": "track",
+    "type": "open-close",
+    "attributes": ["kind", "src", "srclang", "label"],
+    "nativeStyling": [],
+    "description": "Definerer tekstspor til medier som videoer og lyd for undertekster, kapitler eller beskrivelser."
+  },
+  {
+    "tag": "u",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Representerer tekst, der skal vises med understreget stil."
+  },
+  {
+    "tag": "ul",
+    "type": "open-close",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Definerer en uordnet liste (punktopstilling) af elementer uden en bestemt rækkefølge."
+  },
+  {
+    "tag": "video",
+    "type": "open-close",
+    "attributes": ["controls", "src"],
+    "nativeStyling": [],
+    "description": "Indlejrer videoklip eller videostreaming i en webside, med afspilningskontrol."
+  },
+  {
+    "tag": "wbr",
+    "type": "void",
+    "attributes": [],
+    "nativeStyling": [],
+    "description": "Indsætter et stedsmærke, der angiver et valgbart linjeskiftsted i tekst."
+  }
+]
