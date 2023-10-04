@@ -16,7 +16,7 @@ shuffle(newdata1);
 shuffle(newdata2);
 
 function bigBox(card) {
-  let box = document.getElementById("ourside-box");
+  let box = document.getElementById("outside-box");
 
   let container = document.createElement("article");
   container.setAttribute("class", "container");

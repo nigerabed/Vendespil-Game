@@ -11,9 +11,10 @@ body{
 
 header{
     height: 15em ;
-    width: 100%;
+    width: 70%;
     background-color: rgb(96, 139, 240);
     border: 2px solid black;
+      margin-left: 10em;
 
 }
 
@@ -39,10 +40,17 @@ h1{
 
 img{
     height: 12em;
-    width: 25%;
+  
+    margin: 2em;
 
 }
 
 .cards{
     margin-top: 3em;
+}
+
+#outside-box{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
