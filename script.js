@@ -15,6 +15,9 @@ function shuffle(arrayData) {
 shuffle(newdata1);
 shuffle(newdata2);
 
+let temp1 = "";
+let temp2 = "";
+
 function bigBox(card) {
   let box = document.getElementById("outside-box");
 
@@ -38,9 +41,34 @@ function bigBox(card) {
         description: ${card.description}
 </div>
 `;
-
+ 
   mainDiv.addEventListener("click", function handleClick(event) {
-    mainDiv.classList.toggle("flipped")
+   
+    mainDiv.classList.toggle("flipped");
+
+    if (temp1 === "") {
+      temp1 = mainDiv;
+    } else if (temp2 === "") {
+      temp2 = mainDiv;
+    }
+
+    // checking
+    if (temp1 != "" && temp2 != "") {
+      if (temp1 === temp2) {
+        document.getElementById("result").innerText = "Match";
+      } else {
+        document.getElementById("result").innerText = "Not Match";
+      }
+
+      setTimeout(function () {
+        mainDiv.classList.toggle("flipped");
+        mainDiv.classList.toggle("flipped");
+      
+      }, 2000);
+
+      temp1 = "";
+      temp2 = "";
+    }
   });
 }
 
