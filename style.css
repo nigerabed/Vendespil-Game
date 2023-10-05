@@ -50,6 +50,10 @@ h1 {
  
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 #outside-box {
   width: 70%;
   display: grid;

@@ -12,8 +12,8 @@ function shuffle(arrayData) {
   }
 }
 
-shuffle(newdata1);
-shuffle(newdata2);
+// shuffle(newdata1);
+// shuffle(newdata2);
 
 let temp1 = "";
 let temp2 = "";
@@ -54,20 +54,29 @@ function bigBox(card) {
 
     // checking
     if (temp1 != "" && temp2 != "") {
-      if (temp1 === temp2) {
+      if (temp1.innerHTML === temp2.innerHTML) {
         document.getElementById("result").innerText = "Match";
+      
+              setTimeout(function () {
+                temp1.classList.toggle("hidden");
+                temp2.classList.toggle("hidden");
+                temp1 = "";
+                temp2 = "";
+              }, 2000);
+
       } else {
         document.getElementById("result").innerText = "Not Match";
+        setTimeout(function () {
+            temp1.classList.toggle("flipped");
+            temp2.classList.toggle("flipped");
+            temp1 = "";
+            temp2 = "";
+        
+        }, 2000);
       }
 
-      setTimeout(function () {
-        mainDiv.classList.toggle("flipped");
-        mainDiv.classList.toggle("flipped");
-      
-      }, 2000);
 
-      temp1 = "";
-      temp2 = "";
+     
     }
   });
 }
