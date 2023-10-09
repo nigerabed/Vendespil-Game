@@ -37,12 +37,12 @@ elementMediumMode.addEventListener("click", () => {
 
 // Logic for Hard mode
 
-let elementHardMode = document.querySelector("#hardMode");
+let elementHardMode = document.querySelector("#HardMode");
 elementHardMode.addEventListener("click", () => {
   document.getElementById("outside-box").innerHTML = "";
 
-  let newdata1 = data.slice(0, 12);
-  let newdata2 = data.slice(0, 12);
+  let newdata1 = data.slice(0, 14);
+  let newdata2 = data.slice(0, 14);
   shuffle(newdata1);
   shuffle(newdata2);
 
