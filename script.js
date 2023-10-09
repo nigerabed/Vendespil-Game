@@ -1,19 +1,62 @@
 import data from "./data.json" assert { type: "json" };
 
-let newdata1 = data.slice(0, 10);
-let newdata2 = data.slice(0, 10);
+// let newdata1 = data.slice(0, 10);
+// let newdata2 = data.slice(0, 10);
 
-function shuffle(arrayData) {
-  for (let i = 0; i < arrayData.length; i++) {
-    let randomIndex = Math.floor(Math.random() * arrayData.length); //Math.floor(Math.random()* max); random er formula.
-    let temp = arrayData[randomIndex];
-    arrayData[randomIndex] = arrayData[i];
-    arrayData[i] = temp;
+// Logic for easy Mode
+let elementEasyMode = document.querySelector("#easyMode");
+elementEasyMode.addEventListener("click", () => {
+  document.getElementById("outside-box").innerHTML = "";
+
+  let newdata1 = data.slice(0, 3);
+  let newdata2 = data.slice(0, 3);
+  shuffle(newdata1);
+  shuffle(newdata2);
+
+  for (let i = 0; i < newdata1.length; i++) {
+    bigBox(newdata1[i]);
+    bigBox(newdata2[i]);
   }
-}
+});
 
-// shuffle(newdata1);
-// shuffle(newdata2);
+// Logic for Medium mode
+let elementMediumMode = document.querySelector("#MediumMode");
+elementMediumMode.addEventListener("click", () => {
+  document.getElementById("outside-box").innerHTML = "";
+
+  let newdata1 = data.slice(0, 7);
+  let newdata2 = data.slice(0, 7);
+  shuffle(newdata1);
+  shuffle(newdata2);
+
+  for (let i = 0; i < newdata1.length; i++) {
+    bigBox(newdata1[i]);
+    bigBox(newdata2[i]);
+  }
+});
+
+// Logic for Hard mode
+
+let elementHardMode = document.querySelector("#hardMode");
+elementHardMode.addEventListener("click", () => {
+  document.getElementById("outside-box").innerHTML = "";
+
+  let newdata1 = data.slice(0, 12);
+  let newdata2 = data.slice(0, 12);
+  shuffle(newdata1);
+  shuffle(newdata2);
+
+  for (let i = 0; i < newdata1.length; i++) {
+    bigBox(newdata1[i]);
+    bigBox(newdata2[i]);
+  }
+});
+
+
+
+
+shuffle(newdata1);
+shuffle(newdata2);
 
 let temp1 = "";
 let temp2 = "";
@@ -34,16 +77,16 @@ function bigBox(card) {
 
 <div class="back">
     <h3>${card.tag}</h3>
+    <span>
+    type: ${card.type} 
     <br>
-        type: ${card.type} 
-        <br>
-        attributes:${card.attributes[(0, 1)]}
-        description: ${card.description}
+    attributes:${card.attributes[(0, 1)]}
+    description: ${card.description}
+    </span>
 </div>
 `;
- 
+
   mainDiv.addEventListener("click", function handleClick(event) {
-   
     mainDiv.classList.toggle("flipped");
 
     if (temp1 === "") {
@@ -56,27 +99,22 @@ function bigBox(card) {
     if (temp1 != "" && temp2 != "") {
       if (temp1.innerHTML === temp2.innerHTML) {
         document.getElementById("result").innerText = "Match";
-      
-              setTimeout(function () {
-                temp1.classList.toggle("hidden");
-                temp2.classList.toggle("hidden");
-                temp1 = "";
-                temp2 = "";
-              }, 2000);
 
+        setTimeout(function () {
+          temp1.classList.toggle("hidden");
+          temp2.classList.toggle("hidden");
+          temp1 = "";
+          temp2 = "";
+        }, 2000);
       } else {
         document.getElementById("result").innerText = "Not Match";
         setTimeout(function () {
-            temp1.classList.toggle("flipped");
-            temp2.classList.toggle("flipped");
-            temp1 = "";
-            temp2 = "";
-        
+          temp1.classList.toggle("flipped");
+          temp2.classList.toggle("flipped");
+          temp1 = "";
+          temp2 = "";
         }, 2000);
       }
-
-
-     
     }
   });
 }
@@ -84,4 +122,13 @@ function bigBox(card) {
 for (let i = 0; i < newdata1.length; i++) {
   bigBox(newdata1[i]);
   bigBox(newdata2[i]);
+}
+
+function shuffle(arrayData) {
+  for (let i = 0; i < arrayData.length; i++) {
+    let randomIndex = Math.floor(Math.random() * arrayData.length); //Math.floor(Math.random()* max); random er formula.
+    let temp = arrayData[randomIndex];
+    arrayData[randomIndex] = arrayData[i];
+    arrayData[i] = temp;
+  }
 }
