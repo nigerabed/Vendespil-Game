@@ -3,13 +3,16 @@ import data from "./data.json" assert { type: "json" };
 // let newdata1 = data.slice(0, 10);
 // let newdata2 = data.slice(0, 10);
 
+let newdata1 = [];
+let newdata2 = [];
+
 // Logic for easy Mode
 let elementEasyMode = document.querySelector("#easyMode");
-elementEasyMode.addEventListener("click", () => {
+elementEasyMode.addEventListener("click", (event) => {
   document.getElementById("outside-box").innerHTML = "";
 
-  let newdata1 = data.slice(0, 3);
-  let newdata2 = data.slice(0, 3);
+  newdata1 = data.slice(0, 3);
+  newdata2 = data.slice(0, 3);
   shuffle(newdata1);
   shuffle(newdata2);
 
@@ -24,8 +27,8 @@ let elementMediumMode = document.querySelector("#MediumMode");
 elementMediumMode.addEventListener("click", () => {
   document.getElementById("outside-box").innerHTML = "";
 
-  let newdata1 = data.slice(0, 7);
-  let newdata2 = data.slice(0, 7);
+  newdata1 = data.slice(0, 7);
+  newdata2 = data.slice(0, 7);
   shuffle(newdata1);
   shuffle(newdata2);
 
@@ -41,8 +44,8 @@ let elementHardMode = document.querySelector("#HardMode");
 elementHardMode.addEventListener("click", () => {
   document.getElementById("outside-box").innerHTML = "";
 
-  let newdata1 = data.slice(0, 14);
-  let newdata2 = data.slice(0, 14);
+  newdata1 = data.slice(0, 14);
+  newdata2 = data.slice(0, 14);
   shuffle(newdata1);
   shuffle(newdata2);
 
@@ -51,9 +54,6 @@ elementHardMode.addEventListener("click", () => {
     bigBox(newdata2[i]);
   }
 });
-
-
-
 
 shuffle(newdata1);
 shuffle(newdata2);
@@ -96,7 +96,7 @@ function bigBox(card) {
     }
 
     // checking
-    if (temp1 != "" && temp2 != "") {
+    if (temp1 !== "" && temp2 !== "") {
       if (temp1.innerHTML === temp2.innerHTML) {
         document.getElementById("result").innerText = "Match";
 

@@ -32,8 +32,8 @@
 
 .button-19:after {
   background-clip: padding-box;
-  background-color: #1cb0f6;
-  border: solid transparent;
+  background-color: #6a6b6c;
+  border: 2px solid black;
   border-radius: 16px;
   border-width: 0 0 4px;
   bottom: -4px;

@@ -33,7 +33,7 @@ h1 {
 .message {
   display: flex;
   align-items: center;
-  height: 1.5em;
+  height: 2.5em;
   width: 6em;
   padding-left: 2em;
   background-color: rgb(79, 27, 27);
@@ -45,7 +45,7 @@ h1 {
 #result {
   color: rgb(255, 249, 249);
   text-shadow: 3px 3px 5px rgb(251, 11, 11);
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .hidden {
