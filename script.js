@@ -6,6 +6,8 @@ import data from "./data.json" assert { type: "json" };
 let newdata1 = [];
 let newdata2 = [];
 
+let match = 0;
+
 // Logic for easy Mode
 let elementEasyMode = document.querySelector("#easyMode");
 elementEasyMode.addEventListener("click", (event) => {
@@ -105,6 +107,7 @@ function bigBox(card) {
           temp2.classList.toggle("hidden");
           temp1 = "";
           temp2 = "";
+          match++
         }, 2000);
       } else {
         document.getElementById("result").innerText = "Not Match";
@@ -130,5 +133,27 @@ function shuffle(arrayData) {
     let temp = arrayData[randomIndex];
     arrayData[randomIndex] = arrayData[i];
     arrayData[i] = temp;
+  }
+}
+
+
+function makeModel(){
+  let model = document.createElement("div")
+  model.innerHTML = `
+  
+  <div>
+
+        <h1>Winner</h1>
+        <button>Restart Game</button>
+
+    </div>
+  
+  `;
+  document.body.appendChild(model);
+}
+
+function winner(){
+  if(match === newdata1){
+    makeModel()
   }
 }
