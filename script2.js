@@ -105,8 +105,6 @@ function displayCard(card) {
 
   mainDiv.addEventListener("click", function handleClick(event) {
     mainDiv.classList.toggle("flipped");
-    console.log("temp1",temp1);
-    console.log("temp2", temp1);
 
     if (temp1 === "") {
       temp1 = mainDiv;
