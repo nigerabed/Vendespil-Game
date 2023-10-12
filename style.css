@@ -11,6 +11,8 @@ body {
 }
 
 header {
+ 
+  top : 0;
   height: 18m;
   width: 70%;
   background-color: rgb(96, 139, 240);
@@ -32,14 +34,20 @@ h1 {
 
 .message {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 2.5em;
-  width: 6em;
-  padding-left: 2em;
-  background-color: rgb(79, 27, 27);
+ width: 6em;
+ height: 3em;
+ 
+  padding: 1em;
+  background-color: rgb(245, 73, 73);
   border-radius: 0.5em;
-  margin-top: 2rem;
+
   border: 2px solid rgb(8, 8, 8);
+  position: fixed;
+  right: 0;
+  top: 0;
+
 }
 
 #result {
@@ -120,3 +128,27 @@ h1 {
   display: inline;
   width: 200px;
 }
+
+#points{
+  height: 1.5em;
+  width: 4.5em;
+  margin-top: .2em;
+  background-color:#6a6b6c;
+   border: 2px solid black;
+  border-radius: .5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#timeScore{
+  object-fit: cover;
+   height: 1.5em;
+  width: 7em;
+  background-color:#6a6b6c;
+   border: 2px solid black;
+  border-radius: .5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+

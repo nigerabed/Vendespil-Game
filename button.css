@@ -27,6 +27,7 @@
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+ 
   
 }
 
@@ -58,3 +59,4 @@
 .button-19:disabled {
   cursor: auto;
 }
+
