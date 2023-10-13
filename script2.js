@@ -6,8 +6,6 @@ let cardSet2;
 let temp1 = "";
 let temp2 = "";
 
-
-
 function getASetOfCard(mode) {
   if (mode === "easy") {
     cardSet = data.slice(0, 3);
@@ -30,37 +28,43 @@ function updatePoint() {
 
 function gameOver() {
   if (pointCount === cardSet.length) {
+    clearInterval(timerId);
     document.getElementById("result").innerText = "Game Over";
   }
 }
 
-function reset(){
+function reset() {
   document.getElementById("outside-box").innerHTML = "";
-  document.getElementById("result").innerHTML = ""
-  document.getElementById("score").innerHTML = ""
-  pointCount = 0
-   
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("score").innerHTML = "";
+  pointCount = 0;
 }
 
-// SET TIMER 
+// SET TIMER
 
-let minutesLabel = document.getElementById("minutes");
-let secondsLabel = document.getElementById("seconds");
-let totalSeconds = 0;
-setInterval(setTime, 1000);
+let timerId; // makes the variable global
 
-function setTime() {
-  ++totalSeconds;
-  secondsLabel.innerHTML = pad(totalSeconds % 60);
-  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-}
+function timer() {
+  let minutesLabel = document.getElementById("minutes");
+  let secondsLabel = document.getElementById("seconds");
+  let totalSeconds = 0;
 
-function pad(val) {
-  let valString = val + "";
-  if (valString.length < 2) {
-    return "0" + valString;
-  } else {
-    return valString;
+  clearInterval(timerId);
+  timerId = setInterval(setTime, 1000);
+
+  function setTime() {
+    ++totalSeconds;
+    secondsLabel.innerHTML = pad(totalSeconds % 60);
+    minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+  }
+
+  function pad(val) {
+    let valString = val + "";
+    if (valString.length < 2) {
+      return "0" + valString;
+    } else {
+      return valString;
+    }
   }
 }
 
@@ -85,12 +89,12 @@ function displayCardSet(cardSet) {
 let easyMode = document.getElementById("easyMode");
 easyMode.addEventListener("click", (event) => {
   console.log("Easy Mode");
-  reset()
+  reset();
   let cardSet1 = getASetOfCard("easy"); //data.slice(0, 3);
   let cardSet2 = getASetOfCard("easy"); //data.slice(0, 3);
-  let cardSet = cardSet1.concat(cardSet2)
-  displayCardSet(cardSet)
-  
+  let cardSet = cardSet1.concat(cardSet2);
+  displayCardSet(cardSet);
+  timer();
 });
 
 let mediumMode = document.getElementById("MediumMode");
@@ -99,22 +103,22 @@ mediumMode.addEventListener("click", (event) => {
   reset();
   let cardSet1 = getASetOfCard("medium"); //data.slice(0, 7);
   let cardSet2 = getASetOfCard("medium"); //data.slice(0, 7);
-   let cardSet = cardSet1.concat(cardSet2);
+  let cardSet = cardSet1.concat(cardSet2);
   displayCardSet(cardSet);
- 
+
+  timer();
 });
 
 let hardMode = document.getElementById("HardMode");
 hardMode.addEventListener("click", (event) => {
   console.log("Hard Mode");
-   reset();
+  reset();
   let cardSet1 = getASetOfCard("hard"); //data.slice(0, 14);
   let cardSet2 = getASetOfCard("hard"); //data.slice(0, 14);
-   let cardSet = cardSet1.concat(cardSet2);
-   displayCardSet(cardSet);
+  let cardSet = cardSet1.concat(cardSet2);
+  displayCardSet(cardSet);
+  timer();
 });
-
-
 
 function displayCard(card) {
   let box = document.getElementById("outside-box");
