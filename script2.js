@@ -5,6 +5,7 @@ let cardSet1;
 let cardSet2;
 let temp1 = "";
 let temp2 = "";
+ let totalSeconds = 0;
 
 function getASetOfCard(mode) {
   if (mode === "easy") {
@@ -30,8 +31,12 @@ function gameOver() {
   if (pointCount === cardSet.length) {
     clearInterval(timerId);
     document.getElementById("result").innerText = "Game Over";
+    localStorage.setItem("time", totalSeconds );
   }
 }
+
+let time = localStorage.getItem("time");
+document.getElementById("timeRecordValue").innerText= time;
 
 function reset() {
   document.getElementById("outside-box").innerHTML = "";
@@ -47,7 +52,7 @@ let timerId; // makes the variable global
 function timer() {
   let minutesLabel = document.getElementById("minutes");
   let secondsLabel = document.getElementById("seconds");
-  let totalSeconds = 0;
+ 
 
   clearInterval(timerId);
   timerId = setInterval(setTime, 1000);
