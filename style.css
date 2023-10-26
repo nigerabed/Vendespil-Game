@@ -16,7 +16,7 @@ header {
   width: 70%;
   background-color: rgb(96, 139, 240);
   border: 2px solid black;
-  margin-left: 10em;
+  margin-left: 13em;
 }
 
 #top {
@@ -160,5 +160,11 @@ h1 {
   left: 0;
   top: 0;
   color: aliceblue;
+  font-size: 20px;
+  text-align: center;
   
+}
+
+#timeRecordValue{
+ 
 }
