@@ -6,6 +6,7 @@ let cardSet2;
 let temp1 = "";
 let temp2 = "";
  let totalSeconds = 0;
+ let mode ="easy"
 
 function getASetOfCard(mode) {
   if (mode === "easy") {
@@ -44,6 +45,16 @@ function reset() {
   document.getElementById("score").innerHTML = "";
   pointCount = 0;
 }
+
+let restart = document.getElementById("restartBtn");
+restart.addEventListener("click", function(){
+  reset();
+  let cardSet1 = getASetOfCard(mode); //data.slice(0, 3);
+  let cardSet2 = getASetOfCard(mode); //data.slice(0, 3);
+  let cardSet = cardSet1.concat(cardSet2);
+  displayCardSet(cardSet);
+  timer();
+})
 
 // SET TIMER
 
@@ -94,6 +105,7 @@ function displayCardSet(cardSet) {
 let easyMode = document.getElementById("easyMode");
 easyMode.addEventListener("click", (event) => {
   console.log("Easy Mode");
+mode = "easy";
   reset();
   let cardSet1 = getASetOfCard("easy"); //data.slice(0, 3);
   let cardSet2 = getASetOfCard("easy"); //data.slice(0, 3);
@@ -105,6 +117,7 @@ easyMode.addEventListener("click", (event) => {
 let mediumMode = document.getElementById("MediumMode");
 mediumMode.addEventListener("click", (event) => {
   console.log("Medium Mode");
+  mode= "medium";
   reset();
   let cardSet1 = getASetOfCard("medium"); //data.slice(0, 7);
   let cardSet2 = getASetOfCard("medium"); //data.slice(0, 7);
@@ -117,6 +130,7 @@ mediumMode.addEventListener("click", (event) => {
 let hardMode = document.getElementById("HardMode");
 hardMode.addEventListener("click", (event) => {
   console.log("Hard Mode");
+   mode = "hard";
   reset();
   let cardSet1 = getASetOfCard("hard"); //data.slice(0, 14);
   let cardSet2 = getASetOfCard("hard"); //data.slice(0, 14);
